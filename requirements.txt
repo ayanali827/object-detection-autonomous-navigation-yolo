@@ -1,0 +1,9 @@
+ultralytics
+opencv-python<4.11
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scikit-learn
+ipykernel
