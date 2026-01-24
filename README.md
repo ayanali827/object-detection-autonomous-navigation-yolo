@@ -1,10 +1,16 @@
 # Object Detection for Autonomous Vehicle Navigation Using YOLO
 
+<img width="579" height="386" alt="image" src="https://github.com/user-attachments/assets/75aa519e-cb2a-46f0-9afe-71a0348bf83f" />
+
+
 ## Overview
 
 This repository contains the research and implementation of a robust perception stack for autonomous vehicle navigation. The project focuses on the comparative evaluation of three state-of-the-art YOLO architectures—**YOLOv8**, **YOLO11**, and **YOLO12**—specifically optimized for real-time obstacle detection in driving scenarios.
 
 This work represents the second phase of a multi-semester autonomous driving initiative at **ITMO University**, building upon previously established path planning and control frameworks.
+
+<img width="740" height="529" alt="image" src="https://github.com/user-attachments/assets/c937bfcb-0701-494c-b426-03c15abaea1b" />
+
 
 ## Problem Statement
 
@@ -21,6 +27,9 @@ We evaluate three distinct evolutionary stages of the YOLO family:
 - **YOLO11**: Incorporates C3k2 modules and C2PSA (Self-Attention) layers for enhanced feature extraction.
 - **YOLO12**: Utilizes Area Attention (A2) and R-ELAN architectures to bridge the gap between CNN efficiency and Transformer performance.
 
+  <img width="892" height="611" alt="image" src="https://github.com/user-attachments/assets/24822e57-e4aa-406e-9bc8-5f3b6cb77464" />
+
+
 ## Dataset
 
 The investigation utilized the **KITTI Self-Driving Car Obstacles Dataset**.
@@ -28,6 +37,9 @@ The investigation utilized the **KITTI Self-Driving Car Obstacles Dataset**.
 - **Train Set**: 763 images (80%)
 - **Validation Set**: 191 images (20%)
 - **Classes**: `Car`, `Van`, `Truck`, `Pedestrian`, `Person_sitting`, `Cyclist`, `Tram`, `Misc`.
+
+<img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/e9d6b268-bb93-49e0-a448-2a5a4d346339" />
+
 
 ## Training Pipeline
 
@@ -50,6 +62,9 @@ To manage computational resource constraints, the following optimizations were i
 | **Inference Speed** | **45 FPS** | 42 FPS | 44 FPS |
 | **Parameters** | 25.9M | 24.6M | 25.4M |
 
+<img width="494" height="327" alt="image" src="https://github.com/user-attachments/assets/6be8a170-930b-4ec0-9e5e-4243b90abe5b" />
+
+
 ### Class-Specific mAP@0.5
 
 | Object Class | YOLOv8 | YOLO11 | YOLO12 |
@@ -59,6 +74,9 @@ To manage computational resource constraints, the following optimizations were i
 | **Van** | 0.66 | 0.66 | **0.72** |
 | **Pedestrian** | **0.60** | 0.55 | 0.51 |
 | **Cyclist** | **0.61** | 0.59 | 0.59 |
+
+<img width="910" height="502" alt="image" src="https://github.com/user-attachments/assets/17d7a818-e117-497e-a94f-743861860c1e" />
+
 
 ## Results and Analysis
 
@@ -92,8 +110,6 @@ object-detection-autonomous-navigation-yolo/
 ├── docs/                 # Research synopsis and assets
 ├── evaluation/           # Performance validation scripts
 ├── inference/            # Real-time perception engine
-├── models/               # Model weights (v8, 11, 12)
-├── scripts/              # Data utility tools
 └── training/             # Training pipelines and logs
 ```
 
