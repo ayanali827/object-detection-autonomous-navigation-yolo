@@ -66,6 +66,12 @@ To manage computational resource constraints, the following optimizations were i
 - **YOLO11** achieved the best mAP@0.5:0.95 (50.2%), indicating superior localization precision and performance in challenging scenarios.
 - **YOLO12** provided the highest mean precision (0.826) and balanced performance, particularly excelling in detecting `Van` and `Truck` classes.
 
+- 
+
+https://github.com/user-attachments/assets/628bb57e-3843-4726-b838-e2341cc0e1d5
+
+
+
 ## Integration with Autonomous Navigation
 
 The perception output (bounding boxes and class labels) is designed to feed directly into the **Path Planning** module. This environmental awareness enables:
