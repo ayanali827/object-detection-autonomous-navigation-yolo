@@ -1,26 +1,44 @@
 # YOLO Autonomous Perception Configuration
 
 model:
-  variant: "yolov12m.pt" # Options: yolov8n, yolov11m, yolov12m
+  variants:
+    - name: "yolov8m"
+      mAP50: 0.756
+      mAP50_95: 0.487
+      FPS: 45
+      params: "25.9M"
+    - name: "yolo11m"
+      mAP50: 0.748
+      mAP50_95: 0.502
+      FPS: 42
+      params: "24.6M"
+    - name: "yolo12m"
+      mAP50: 0.732
+      mAP50_95: 0.495
+      FPS: 44
+      params: "25.4M"
   task: "detect"
 
 dataset:
-  name: "Udacity-Self-Driving-Car"
+  name: "KITTI Self-Driving Car Obstacles Dataset"
   yaml_path: "data/data.yaml"
-  classes: ["car", "truck", "pedestrian", "biker", "trafficLight", "trafficLight-Green", "trafficLight-GreenLeft", "trafficLight-Red", "trafficLight-RedLeft", "trafficLight-Yellow", "trafficLight-YellowLeft", "signal"]
+  total_images: 954
+  train_split: 763
+  val_split: 191
+  classes: ["Car", "Van", "Truck", "Pedestrian", "Person_sitting", "Cyclist", "Tram", "Misc"]
 
 training:
-  epochs: 50
-  imgsz: 640
-  batch_size: 16
-  device: 0 # GPU ID or 'cpu'
+  epochs: 80 # Total epochs including continued training
+  imgsz: 416 # Optimized for memory constraints
+  batch_size: 6
+  device: 0 # NVIDIA RTX 4050
   optimizer: "AdamW"
   lr0: 0.001
   patience: 20
   project_name: "autonomous_perception"
-  run_name: "yolov12_baseline"
 
 inference:
   conf_threshold: 0.25
   iou_threshold: 0.45
   max_det: 300
+  resolution: 416
