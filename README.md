@@ -38,7 +38,8 @@ The investigation utilized the **KITTI Self-Driving Car Obstacles Dataset**.
 - **Validation Set**: 191 images (20%)
 - **Classes**: `Car`, `Van`, `Truck`, `Pedestrian`, `Person_sitting`, `Cyclist`, `Tram`, `Misc`.
 
-<img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/e9d6b268-bb93-49e0-a448-2a5a4d346339" />
+<img width="900" height="586" alt="image" src="https://github.com/user-attachments/assets/71e32b9c-a599-489f-8067-92d83fccba3e" />
+
 
 
 ## Training Pipeline
