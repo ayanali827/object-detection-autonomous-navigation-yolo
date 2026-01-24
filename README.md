@@ -76,7 +76,7 @@ The perception output (bounding boxes and class labels) is designed to feed dire
 ## Project Structure
 
 ```
-yolo-autonomous-perception/
+object-detection-autonomous-navigation-yolo/
 ├── configs/              # YAML configurations for reproducible experiments
 ├── data/                 # KITTI dataset management
 ├── docs/                 # Research synopsis and assets
