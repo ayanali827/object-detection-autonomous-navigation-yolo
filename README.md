@@ -75,7 +75,7 @@ To manage computational resource constraints, the following optimizations were i
 | **Pedestrian** | **0.60** | 0.55 | 0.51 |
 | **Cyclist** | **0.61** | 0.59 | 0.59 |
 
-<img width="910" height="502" alt="image" src="https://github.com/user-attachments/assets/17d7a818-e117-497e-a94f-743861860c1e" />
+<img width="810" height="502" alt="image" src="https://github.com/user-attachments/assets/17d7a818-e117-497e-a94f-743861860c1e" />
 
 
 ## Results and Analysis
