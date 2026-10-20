@@ -33,6 +33,8 @@ We evaluate three distinct evolutionary stages of the YOLO family:
 ## Dataset
 
 The investigation utilized the **KITTI Self-Driving Car Obstacles Dataset**.
+
+> **Scope note:** This study uses a **954-image subset of KITTI** for a controlled, like-for-like comparison of the three models under identical conditions. Results are internally comparable, but are **not comparable to the official KITTI benchmark leaderboard**, which uses the full dataset and its own evaluation server.
 - **Total Images**: 954
 - **Train Set**: 763 images (80%)
 - **Validation Set**: 191 images (20%)
@@ -125,10 +127,10 @@ object-detection-autonomous-navigation-yolo/
 This project is licensed under the MIT License.
 
 ```bibtex
-@article{ali2026yolo,
+@misc{ali2026yolo,
   title={Object Detection for Autonomous Vehicle Navigation Using YOLO},
   author={Ali, Ayan},
-  journal={ITMO University Research Internship},
+  note={ITMO University Research Internship},
   year={2026}
 }
 ```
